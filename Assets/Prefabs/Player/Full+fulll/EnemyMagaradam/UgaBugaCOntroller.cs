@@ -84,7 +84,7 @@ public class UgaBugaCOntroller : MonoBehaviour
 
     IEnumerator DealDamage()
     {
-        _player.GetComponent<playerHealth>().TakeDamage();
+        _player.GetComponent<PlayerHealth>().TakeDamage();
         yield return new WaitForSeconds(1);
 
         _isDealingDamage = true;
@@ -115,7 +115,7 @@ public class UgaBugaCOntroller : MonoBehaviour
     IEnumerator attack()
     {
         _animator.SetBool("attack", true);
-        _player.GetComponent<playerHealth>().TakeDamage();
+        _player.GetComponent<PlayerHealth>().TakeDamage();
 
         yield return new WaitForSeconds(2f);
     }

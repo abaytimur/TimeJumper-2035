@@ -72,7 +72,7 @@ public class Raptor : MonoBehaviour
 
     IEnumerator DealDamage()
     {
-        _player.GetComponent<playerHealth>().TakeDamage();
+        _player.GetComponent<PlayerHealth>().TakeDamage();
         _animator.SetBool("attack", true);
         _audioSource.PlayOneShot(raptorRoarSound);
         

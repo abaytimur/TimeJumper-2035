@@ -107,7 +107,7 @@ public class Battery : MonoBehaviour
 
                 _isButtonActive = false;
                 eButton.gameObject.SetActive(false);
-                _player.GetComponent<playerHealth>().health = 1f;
+                _player.GetComponent<PlayerHealth>().health = 1f;
                 Destroy(eButton);
             }
         }

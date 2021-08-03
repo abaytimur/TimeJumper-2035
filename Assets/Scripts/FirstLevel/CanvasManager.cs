@@ -14,7 +14,6 @@ public class CanvasManager : MonoBehaviour
     public TMP_Dropdown dropdown;
     public AudioClip disabledSound;
     public AudioClip jumpSound;
-    public ParticleSystem sparkParticleEffect;
     
     public void JumpButton()
     {

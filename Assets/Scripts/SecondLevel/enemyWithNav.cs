@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class enemyWithNav : MonoBehaviour
+public class EnemyWithNav : MonoBehaviour
 {
     [SerializeField] private float health = 20;
     [SerializeField] private Transform player;
@@ -59,7 +59,7 @@ public class enemyWithNav : MonoBehaviour
     IEnumerator attack()
     {
         _anim.SetBool("Attack", true);
-        player.gameObject.GetComponent<playerHealth>().TakeDamage();
+        player.gameObject.GetComponent<PlayerHealth>().TakeDamage();
         yield return new WaitForSecondsRealtime(2f);
     }
 }
