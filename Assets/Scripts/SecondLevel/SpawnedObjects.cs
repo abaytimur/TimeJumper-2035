@@ -48,7 +48,7 @@ public class SpawnedObjects : MonoBehaviour
         if (Input.GetKey(KeyCode.Q))
         {
             _qButtonImage.fillAmount = _qButtonImage.fillAmount + 0.005f;
-            if (_qButtonImage.fillAmount >= 0.95f)
+            if (_qButtonImage.fillAmount >= 1f)
             {
                 _qButtonImage.gameObject.SetActive(false);
                 

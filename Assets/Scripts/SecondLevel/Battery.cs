@@ -15,7 +15,7 @@ public class Battery : MonoBehaviour
     [SerializeField] private LayerMask layerMask;
     [Range(0, 10f)] [SerializeField] private int collisionCheckRange = 4;
 
-    [SerializeField] [CanBeNull] private UnityEngine.UI.Image eButton;
+    [SerializeField] private UnityEngine.UI.Image eButton;
 
     private bool _isButtonActive = true;
 
@@ -64,7 +64,7 @@ public class Battery : MonoBehaviour
 
         if (Physics.CheckSphere(transform.position, collisionCheckRange, layerMask))
         {
-            eButton.gameObject.SetActive(true);
+            if (eButton != null) eButton.gameObject.SetActive(true);
 
             if (!_isButtonActive)
             {
@@ -75,7 +75,7 @@ public class Battery : MonoBehaviour
         }
         else
         {
-            eButton.gameObject.SetActive(false);
+            if (eButton != null) eButton.gameObject.SetActive(false);
         }
     }
 
@@ -89,7 +89,7 @@ public class Battery : MonoBehaviour
         if (Input.GetKey(KeyCode.E))
         {
             eButton.fillAmount = eButton.fillAmount + 0.005f;
-            if (eButton.fillAmount >= 0.95f)
+            if (eButton.fillAmount >= 1f)
             {
                 if (!_isSpawningStarted)
                 {
