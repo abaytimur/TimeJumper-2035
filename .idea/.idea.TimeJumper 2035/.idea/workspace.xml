@@ -3,23 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="763b88fc-d26f-4116-955e-ded113067a47" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TimeJumper 2035/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TimeJumper 2035/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CursorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CursorController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FirstLevel/CanvasManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FirstLevel/CanvasManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FirstLevel/ExitSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FirstLevel/ExitSceneManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/AudioSecondLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/AudioSecondLevel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/Battery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/Battery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/Billboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/Billboard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/GunController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/GunController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/PlayerContoller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/PlayerContoller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/PlayerHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/Raptor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/Raptor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/SpawnedObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/SpawnedObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/TriggerBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/TriggerBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleCam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SimpleCam.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water For URP/Materials/Windwaker.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized Water For URP/Materials/Windwaker.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,6 +70,7 @@
       <workItem from="1628027297109" duration="651000" />
       <workItem from="1628028102229" duration="660000" />
       <workItem from="1628075061784" duration="2655000" />
+      <workItem from="1628102297113" duration="655000" />
     </task>
     <servers />
   </component>
