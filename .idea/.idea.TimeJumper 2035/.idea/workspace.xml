@@ -14,6 +14,9 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/GunController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/GunController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/PlayerContoller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/PlayerContoller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/PlayerHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/Raptor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/Raptor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/SpawnedObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/SpawnedObjects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/TriggerBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/TriggerBox.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleCam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SimpleCam.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Stylized Water For URP/Materials/Windwaker.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized Water For URP/Materials/Windwaker.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
@@ -81,7 +84,7 @@
       <workItem from="1627986862191" duration="1368000" />
       <workItem from="1628027297109" duration="651000" />
       <workItem from="1628028102229" duration="660000" />
-      <workItem from="1628075061784" duration="2434000" />
+      <workItem from="1628075061784" duration="2655000" />
     </task>
     <servers />
   </component>
