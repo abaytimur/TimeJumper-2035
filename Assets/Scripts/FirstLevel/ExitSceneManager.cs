@@ -14,7 +14,6 @@ public class ExitSceneManager : MonoBehaviour
         _videoPlayer = gameObject.GetComponent<VideoPlayer>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         _videoPlayer.loopPointReached += EndReached;
@@ -23,7 +22,6 @@ public class ExitSceneManager : MonoBehaviour
     void EndReached(UnityEngine.Video.VideoPlayer vp)
     {
         vp.playbackSpeed = vp.playbackSpeed / 10.0F;
-        
         
         Application.Quit();
     }

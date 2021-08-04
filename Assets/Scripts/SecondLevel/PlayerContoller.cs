@@ -6,12 +6,13 @@ using UnityEngine;
 public class PlayerContoller : MonoBehaviour
 {
     [SerializeField] private float speed;
-    Rigidbody _rb;
-    Animator _anim;
+    private Rigidbody _rb;
+    private Animator _anim;
     private AudioSource _audioSource;
 
-    public Camera cameraCm;
-    public LayerMask layerMask;
+    [SerializeField] private Camera cameraCm;
+    [SerializeField] private LayerMask layerMask;
+
     void Start()
     {
         _audioSource = gameObject.GetComponent<AudioSource>();
@@ -19,12 +20,10 @@ public class PlayerContoller : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
     }
 
-
     private void FixedUpdate()
     {
         Movement();
         RotateHandler();
-      
     }
 
     private void Movement()
@@ -53,17 +52,10 @@ public class PlayerContoller : MonoBehaviour
 
     void RotateHandler()
     {
-        RaycastHit hit;
         Ray ray = cameraCm.ScreenPointToRay(Input.mousePosition);
 
-        // if (Physics.Raycast(ray, out hit))
-        // {
-        //     transform.LookAt(new Vector3(hit.point.x, transform.position.y, hit.point.z));
-        // }
-
-        if (Physics.Raycast(ray, out RaycastHit hitInfo,1000f,layerMask))
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, 1000f, layerMask))
         {
-          
             var target = hitInfo.point;
             target.y = transform.position.y;
             transform.LookAt(target);
@@ -74,7 +66,6 @@ public class PlayerContoller : MonoBehaviour
     {
         StartCoroutine(PlayBackgroundMusic());
         StartCoroutine(PlayThemeMusic());
-        
     }
 
     IEnumerator PlayBackgroundMusic()
@@ -87,8 +78,7 @@ public class PlayerContoller : MonoBehaviour
     IEnumerator PlayThemeMusic()
     {
         yield return new WaitForSeconds(15f);
-        
+
         AudioSecondLevel.Instance.PlayBackgroundMusic();
-        
     }
 }

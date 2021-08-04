@@ -11,10 +11,10 @@ public class CanvasManager : MonoBehaviour
 {
     private Animator _animator;
     private static readonly int PlayCanvasAnim = Animator.StringToHash("PlayCanvasAnim");
-    public TMP_Dropdown dropdown;
-    public AudioClip disabledSound;
-    public AudioClip jumpSound;
-    
+    [SerializeField] private TMP_Dropdown dropdown;
+    [SerializeField] private AudioClip disabledSound;
+    [SerializeField] private AudioClip jumpSound;
+
     public void JumpButton()
     {
         if (dropdown.value == 0)
@@ -31,17 +31,15 @@ public class CanvasManager : MonoBehaviour
     private void Awake()
     {
         _animator = gameObject.GetComponent<Animator>();
-        
     }
 
     public void PlayButton()
     {
-        _animator.SetBool(PlayCanvasAnim,true);
+        _animator.SetBool(PlayCanvasAnim, true);
     }
-    
+
     public void ExitButton()
     {
         SceneManager.LoadScene("ExitScene");
     }
-    
 }

@@ -8,7 +8,6 @@ public class TriggerBox : MonoBehaviour
 {
     [SerializeField] private GameObject[] spawnableObjects;
 
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -17,7 +16,6 @@ public class TriggerBox : MonoBehaviour
             Destroy(this, 0.1f);
         }
     }
-
 
     private void SpawnUnstableObjects()
     {

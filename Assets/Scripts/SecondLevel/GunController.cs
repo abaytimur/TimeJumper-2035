@@ -9,7 +9,7 @@ using Random = UnityEngine.Random;
 
 public class GunController : MonoBehaviour
 {
-    [SerializeField] GameObject bullet;
+    [SerializeField] private GameObject bullet;
 
     private AudioSource _audioSource;
     private Animator _anim;
@@ -84,7 +84,6 @@ public class GunController : MonoBehaviour
         yield return new WaitForSeconds(0.264f);
 
         //_anim.SetBool("IsAttack", false);
-
 
         _canShoot = true;
     }

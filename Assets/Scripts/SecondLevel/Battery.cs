@@ -62,7 +62,6 @@ public class Battery : MonoBehaviour
             }
         }
 
-
         if (Physics.CheckSphere(transform.position, collisionCheckRange, layerMask))
         {
             eButton.gameObject.SetActive(true);
@@ -140,7 +139,6 @@ public class Battery : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
         }
-
         _isSpawningStarted = true;
     }
 }

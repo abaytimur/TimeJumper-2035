@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] float speed = 60f;
-    [SerializeField] float lifeTime = 7f;
+    [SerializeField] private float speed = 60f;
+    [SerializeField] private float lifeTime = 7f;
 
     [SerializeField] private GameObject particleEffect;
     private float _timer;

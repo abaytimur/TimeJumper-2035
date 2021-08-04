@@ -9,8 +9,6 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject firstTimeline;
-    // [SerializeField] private GameObject secondTimeline;
-
     [SerializeField] private GameObject unstableInstructions;
     [SerializeField] private GameObject batteriesCollectedInstructions;
     [SerializeField] private GameObject playerDiedInstructions;
@@ -31,15 +29,10 @@ public class GameManager : MonoBehaviour
             return _instance;
         }
     }
-
-
-    [SerializeField] public Slider playerHealthSlider;
-    [SerializeField] public Slider energyLevelSlider;
-    [SerializeField] public Slider stabilityLevelSlider;
-
-    [SerializeField] public Image playerHealthSliderImageFill;
-    [SerializeField] public Image energyLevelSliderImageFill;
-    [SerializeField] public Image stabilityLevelSliderImageFill;
+    
+    [SerializeField] private Image playerHealthSliderImageFill;
+    [SerializeField] private Image energyLevelSliderImageFill;
+    [SerializeField] private Image stabilityLevelSliderImageFill;
 
     private AudioSource _audioSource;
     [SerializeField] private AudioClip okyanus;
@@ -52,41 +45,24 @@ public class GameManager : MonoBehaviour
         _instance = this;
     }
 
-    // public Image eButton;
-
     private void Start()
     {
         _audioSource = gameObject.GetComponent<AudioSource>();
-        //energyLevelSlider.value = 0;
         energyLevelSliderImageFill.fillAmount = 0f;
-        // stabilityLevelSlider.value = 0;
         stabilityLevelSliderImageFill.fillAmount = 0f;
     }
 
     private void Update()
     {
-        // if (stabilityLevelSlider.value <= 0)
-        // {
-        //     stabilityLevelSlider.value = 0;
-        // }
-
         if (stabilityLevelSliderImageFill.fillAmount <= 0)
         {
             stabilityLevelSliderImageFill.fillAmount = 0;
         }
         
-        // if (energyLevelSlider.value >= 5)
-        // {
-        //     
-        //     print("WIN WIN WIN!!!");
-        //     StartCoroutine(AllBatteriesCollected());
-        // }
         if ( energyLevelSliderImageFill.fillAmount>=1)
         {
             StartCoroutine(AllBatteriesCollected());
         }
-
-        
 
         CheckPlayersHealth();
         CheckStabilityLevels();
@@ -95,11 +71,6 @@ public class GameManager : MonoBehaviour
 
     public void CheckStabilityLevels()
     {
-        // if (stabilityLevelSlider.value >= 99)
-        // {
-        //     StartCoroutine(UnstableGameOver());
-        // }
-
         if (stabilityLevelSliderImageFill.fillAmount  >= 1)
         {
             StartCoroutine(UnstableGameOver());
@@ -121,11 +92,6 @@ public class GameManager : MonoBehaviour
 
     public void CheckPlayersHealth()
     {
-        // if (playerHealthSlider.value <= 1)
-        // {
-        //     StartCoroutine(PlayerDied());
-        // }
-
         if (playerHealthSliderImageFill.fillAmount <=0.01f)
         {
             StartCoroutine(PlayerDied());
@@ -142,25 +108,26 @@ public class GameManager : MonoBehaviour
 
     public void IncreaseCollectedBattery()
     {
-        //energyLevelSlider.value++;
         energyLevelSliderImageFill.fillAmount += 0.2f;
         collectedBatteryNumber++;
-        
     }
 
     public void IncreaseStability(float amount)
     {
-        // stabilityLevelSlider.value += amount;
         stabilityLevelSliderImageFill.fillAmount += amount;
     }
 
     public void DecreaseStability(float amount)
     {
-        // stabilityLevelSlider.value -= amount;
         stabilityLevelSliderImageFill.fillAmount -= amount;
 
     }
-
+    
+    public void PlayBackgroundMusic()
+    {
+        _audioSource.Play();
+    }
+    
     // public void FillButtons()
     // {
     //     if (Input.GetKey(KeyCode.E))
@@ -177,10 +144,4 @@ public class GameManager : MonoBehaviour
     //
     //     }
     // }
-
-    
-    public void PlayBackgroundMusic()
-    {
-        _audioSource.Play();
-    }
 }

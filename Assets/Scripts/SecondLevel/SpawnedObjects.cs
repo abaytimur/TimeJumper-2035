@@ -11,7 +11,7 @@ public class SpawnedObjects : MonoBehaviour
     private Canvas _qButtonCanvas;
     private UnityEngine.UI.Image _qButtonImage;
     private bool _isButtonActive = true;
-    private bool _jobDone = false;
+    
     private void Start()
     {
         _qButtonCanvas = gameObject.GetComponentInChildren<Canvas>();
@@ -50,8 +50,6 @@ public class SpawnedObjects : MonoBehaviour
             _qButtonImage.fillAmount = _qButtonImage.fillAmount + 0.005f;
             if (_qButtonImage.fillAmount >= 0.95f)
             {
-                
-                
                 _qButtonImage.gameObject.SetActive(false);
                 
                 // Play stability bar sound
@@ -61,7 +59,6 @@ public class SpawnedObjects : MonoBehaviour
                 Destroy(this.gameObject);
 
                 _isButtonActive = false;
-
             }
         }
         else

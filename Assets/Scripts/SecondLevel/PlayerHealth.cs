@@ -5,31 +5,25 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] Slider healthBar;
-    [SerializeField] public Image playerHealthSliderImageFill;
-
+    [SerializeField] private Image playerHealthSliderImageFill;
 
     public float health = 1;
     private float maxHp = 1;
     
-
     void Update()
     {
         if (health>= maxHp)
         {
             health = 1;
         }
-        
-       
     }
 
     public void TakeDamage()
     {
-        // play sound
-        // particle effect
+        // Play sound
+        // Particle effect
         health -= 0.03f;
         
-        //healthBar.value = health;
         playerHealthSliderImageFill.fillAmount = health;
     }
 }

@@ -4,26 +4,19 @@ using UnityEngine;
 
 public class SimpleCam : MonoBehaviour
 {
-    [SerializeField] Transform target;
-    [SerializeField] Vector3 targetOffset;
-    [SerializeField] float MoveSpeed;
-
-     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Transform target;
+    [SerializeField] private Vector3 targetOffset;
+    [SerializeField] private float MoveSpeed;
 
     // Update is called once per frame
     void Update()
     {
         MoveCam();
-
-
     }
+
     void MoveCam()
     {
-        transform.position = Vector3.Slerp(transform.position, target.position+targetOffset, MoveSpeed * Time.deltaTime);
+        transform.position =
+            Vector3.Slerp(transform.position, target.position + targetOffset, MoveSpeed * Time.deltaTime);
     }
-  
 }

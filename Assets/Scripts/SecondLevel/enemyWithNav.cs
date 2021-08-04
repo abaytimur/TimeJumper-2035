@@ -7,9 +7,9 @@ public class EnemyWithNav : MonoBehaviour
 {
     [SerializeField] private float health = 20;
     [SerializeField] private Transform player;
-    [SerializeField] GameObject playerSc;
-    NavMeshAgent _agent;
-    Animator _anim;
+    [SerializeField] private GameObject playerSc;
+    private NavMeshAgent _agent;
+    private Animator _anim;
 
     
     void Start()
@@ -40,7 +40,6 @@ public class EnemyWithNav : MonoBehaviour
             _anim.SetBool("Attack", false);
             _anim.SetBool("Run", true);
         }
-
 
         if (health <= 0)
         {

@@ -27,7 +27,6 @@ public class AudioSecondLevel : MonoBehaviour
     private void Awake()
     {
         _instance = this;
-
     }
 
     private void Start()

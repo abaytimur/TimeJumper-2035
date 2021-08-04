@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class CursorController : MonoBehaviour
 {
-    public Texture2D cursor;
-    public Texture2D cursorClicked;
+    [SerializeField] private Texture2D cursor;
+    [SerializeField] private Texture2D cursorClicked;
 
     private void Awake()
     {
