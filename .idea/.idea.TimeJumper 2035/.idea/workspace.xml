@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="763b88fc-d26f-4116-955e-ded113067a47" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TimeJumper 2035/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TimeJumper 2035/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/Battery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/Battery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/SpawnedObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SecondLevel/SpawnedObjects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water For URP/Materials/Windwaker.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized Water For URP/Materials/Windwaker.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +13,17 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.5/Editor/Window/TimelineWindow_HeaderGui.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -70,7 +80,8 @@
       <workItem from="1628027297109" duration="651000" />
       <workItem from="1628028102229" duration="660000" />
       <workItem from="1628075061784" duration="2655000" />
-      <workItem from="1628102297113" duration="655000" />
+      <workItem from="1628102297113" duration="1334000" />
+      <workItem from="1634538840924" duration="679000" />
     </task>
     <servers />
   </component>
